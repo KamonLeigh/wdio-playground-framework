@@ -1,0 +1,27 @@
+{
+  "name": "webdriverio-boilerplate-test-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "integration": "jshint test/integration/*.js && wdio",
+    "integration-test": "start-server-and-test simple-server http://localhost:8080 integration",
+    "simple-server": "cd test/integration; python -m SimpleHTTPServer 8080",
+    "selenium": "selenium-standalone start"
+  },
+  "keywords": [],
+  "author": "Byron Leigh Dunkley",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "jshint": "^2.9.6",
+    "mocha": "^5.2.0",
+    "selenium-standalone": "^6.15.3",
+    "start-server-and-test": "^1.7.1",
+    "wdio-mocha-framework": "^0.6.3",
+    "wdio-sauce-service": "^0.4.11",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^4.13.2"
+  }
+}
